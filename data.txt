@@ -1,0 +1,24 @@
+[
+    {
+        "src":"images/ws_n_45.png",
+        "temp":"霾  15℃ ~ 3℃",
+        "airQ":"重度污染",
+        "aqi":241,
+        "today":"今天(周五)",
+        "tImg":"images/wb_n_45.png",
+        "tTemp":"15℃ ~ 3℃",
+        "tAir":"霾",
+        "tWind":"北风3级",
+        "tom":"明天(周六)",
+        "tomImg":"images/wb_n_1.png",
+        "tomTemp":"17 ~ 3℃",
+        "tomAir":"多云",
+        "tomWind":"北风3级",
+        "aft":"后天(周日)",
+        "aftImg":"images/wb_n_2.png",
+        "aftTemp":"10 ~ 4℃",
+        "aftAir":"阴",
+        "aftWind":"北风3级",
+        "prompt":"略微偏凉，还是蛮舒适的。今天（周五）限行尾号为：49；明天（周六）限行尾号为：周末不限行"
+    }
+]

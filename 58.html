@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>58同城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--隐藏条-->
+<div id="hiddenSearch">
+    <div class="center">
+        <div class="search">
+            <h2><a href="javascript:void 0"><img src="images/logo-wo.png" class="webName1"></a></h2>
+            <form action="" id="searchBarH">
+                <div id="searchTableH">
+                    <span class="magnifier"></span>
+                    <input type="text" value="找工作 找房子 找服务" id="hiddenInput" class="hiddenInput">
+                </div>
+                <div id="searchBtnH">
+                    <input type="submit" value="搜 索">
+                </div>
+            </form>
+            <a href="javascript:void 0" id="freeH">免费发布信息</a>
+        </div>
+    </div>
+</div>
+<!--header--->
+<div class="topBar">
+    <div class="center">
+        <div class='topLeft'>
+            <h2>北京</h2>&nbsp;<span class="location">[<a href="javascript:void 0">切换城市</a>&nbsp;&nbsp;<a
+                href="javascript:void 0">廊坊</a>&nbsp;&nbsp;<a href="javascript:void 0">天津</a>&nbsp;&nbsp;<a
+                href="javascript:void 0">保定</a>]</span>
+            <div class="weather" id="weather">
+                <!--<div class="title"><span><img src="images/ws_n_45.png" class="littleImg">霾  15℃ ~ 3℃</span><span
+                        class="airQuality">重度污染</span></div>
+                <div class="hidden">
+                    <div class="air">今日北京空气质量指数(AQI)：<b class="aqi">241</b>
+                        <p class="more">更多天气查看<a href="javascript:void 0" class="moJi">墨迹天气</a></p>
+                    </div>
+                    <div class="wForecast">
+                        <ul>
+                            <li class="first"><p>今天(周五)</p><img
+                                    src="images/wb_n_45.png" class="wImg">
+                                <p class="describe">15 ~ 3℃<br>霾<br>北风3级</p></li>
+                            <li class="second"><p>明天(周六)</p><img
+                                    src="images/wb_n_1.png" class="wImg">
+                                <p class="describe">17 ~ 3℃<br>多云<br>北风3级</p></li>
+                            <li><p>后天(周日)</p><img
+                                    src="images/wb_n_2.png" class="wImg">
+                                <p class="describe">10 ~ 4℃<br>阴<br>北风3级</p></li>
+                        </ul>
+                    </div>
+                    <div class="prompt"><b class="big">温馨提示：</b>略微偏凉，还是蛮舒适的。今天（周五）限行尾号为：49；明天（周六）限行尾号为：周末不限行</div>
+                </div>-->
+            </div>
+        </div>
+        <div class="topRight">
+            <div class="login"><a href="javascript:void 0">登录</a>
+                <i>|</i>
+                <a href="javascript:void 0">注册</a></div>
+            <div class="my58 hidden"><a href="javascript:void 0">我的58</a><span class="arrow"></span><span
+                    class="front"></span>
+                <div class="downList">
+                    <a href="javascript:void 0" class="my59">我的发布</a>
+                    <a href="javascript:void 0" class="my59">招聘/简历</a>
+                    <a href="javascript:void 0" class="my59">买家交易</a>
+                    <a href="javascript:void 0" class="my59">个人卖家</a>
+                    <a href="javascript:void 0" class="my59">客户服务</a>
+                </div>
+            </div>
+            <div class="vip"><a href="javascript:void 0">VIP中心</a></div>
+            <div class="help"><a href="javascript:void 0">帮助中心</a></div>
+            <div class="hidden turnLeft">最近浏览<span class="arrow"></span><span class="front"></span>
+                <div class="downLeft">
+                    <ul id="feet_final">
+                        <li class="record">暂无浏览记录</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden turnLeft">网站导航<span class="arrow"></span><span class="front"></span>
+                <div class="downLeft bigList">
+                    <ul class="list">
+                        <li class="list0"><h3><a href="javascript:void 0">房产</a></h3><a
+                                href="javascript:void 0">租房</a><br><a href="javascript:void 0">二手房</a><br><a
+                                href="javascript:void 0">商铺</a><br><a href="javascript:void 0">写字楼</a></li>
+                        <li class="list0"><h3><a href="javascript:void 0">二手</a></h3><a
+                                href="javascript:void 0">手机</a><br><a href="javascript:void 0">笔记本</a><br><a
+                                href="javascript:void 0">家具</a><br><a href="javascript:void 0">家电</a></li>
+                        <li class="list0"><h3><a href="javascript:void 0">票务</a></h3><a href="javascript:void 0">演出票</a><br><a
+                                href="javascript:void 0">电影票</a></li>
+                        <li class="list0"><h3 class="noPoint">招聘</h3><a href="javascript:void 0">全职</a><br><a href="javascript:void 0">兼职</a><br><a
+                                href="javascript:void 0">简历库</a></li>
+                        <li class="list0"><h3><a href="javascript:void 0">车辆买卖</a></h3><a
+                                href="javascript:void 0">二手车</a><br><a href="javascript:void 0">新车</a><br><a
+                                href="javascript:void 0">摩托车</a><br><a href="javascript:void 0">自行车</a></li>
+                        <li class="list1"><h3><a href="javascript:void 0">商街</a></h3><em><a
+                                href="javascript:void 0">家政</a></em><a href="javascript:void 0">婚庆</a><br><em><a
+                                href="javascript:void 0">装修</a></em><a href="javascript:void 0">商务</a><br><em><a
+                                href="javascript:void 0">休闲</a></em><a href="javascript:void 0">餐饮</a><br><em><a
+                                href="javascript:void 0">加盟</a></em><a href="javascript:void 0">回收</a></li>
+                        <li class="list0"><h3><a href="javascript:void 0">宠物</a></h3><a href="javascript:void 0">宠物狗<i
+                                class="hotTop"></i></a><br><a href="javascript:void 0">宠物猫</a><br><a
+                                href="javascript:void 0">花鸟鱼虫</a><br><a href="javascript:void 0">宠物服务</a></li>
+                        <li class="list2"><h3 class="noPoint">其他</h3><em><a class="newRed" href="javascript:void 0">团购</a><i
+                                class="hotTop"></i></em><em><a href="javascript:void 0">交友</a></em><a
+                                href="javascript:void 0">网邻通</a><br><em><a href="javascript:void 0">无线</a></em><em><a
+                                class="newRed" href="javascript:void 0">58配配</a><i class="hotTop"></i></em><a
+                                class="newBlue" href="javascript:void 0">消费者保障</a><i class="newTop"></i><br><em><a
+                                class="newBlue" href="javascript:void 0">旅游</a><i class="newTop"></i></em><em><a
+                                href="javascript:void 0">帮助中心</a></em><a href="javascript:void 0">58微信公众号</a><br><em><a
+                                href="javascript:void 0">游戏</a></em><em><a href="javascript:void 0">隐私保护</a></em><a
+                                href="javascript:void 0">58QQ公众号</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="center">
+        <p><a href="javascript:void 0"><img src="images/n_v1bl2lwkc4jw6fo54o6fwa.png" class="ad"></a></p>
+        <div class="search">
+            <h2><a href="javascript:void 0"><img src="images/logo-o.png" class="webName"></a></h2>
+            <a href="javascript:void 0"><img src="images/advertisement.png" class="advertisement"></a>
+            <form action="" id="searchBar">
+                <div id="searchTable">
+                    <span class="magnifier"></span>
+                    <input type="text" value="找工作 找房子 找服务" onfocus="this.value=''" onblur="this.value='找工作 找房子 找服务'" id="input" class="input">
+                </div>
+                <div id="searchBtn">
+                    <input type="submit" value="搜 索">
+                </div>
+                <div id="keyword">
+                    <a href="javascript:void 0" class="keyword">鱼缸</a>
+                    <a href="javascript:void 0" class="keyword">淘宝</a>
+                    <a href="javascript:void 0" class="keyword">美工</a>
+                    <a href="javascript:void 0" class="keyword">夜班</a>
+                    <a href="javascript:void 0" class="keyword">日结</a>
+                    <a href="javascript:void 0" class="keyword">带车司机</a>
+                    <a href="javascript:void 0" class="keyword">销售急聘</a>
+                    <a href="javascript:void 0" class="keyword">除甲醛</a>
+                    <a href="javascript:void 0" class="keyword">装修公司</a>
+                    <a href="javascript:void 0" class="keyword">暖气维修</a>
+                </div>
+            </form>
+            <a href="javascript:void 0" id="free">免费发布信息</a>
+            <a href="javascript:void 0" id="message">修改/删除信息</a>
+        </div>
+        <ul class="navigator">
+            <li class="nav current"><a href="javascript:void 0" class="current">首页</a></li>
+            <li class="nav qrCode"><a href="javascript:void 0" class="navRed box"><span id="app"></span>58APP<span class="sanJiao"></span></a>
+                <div class="hiddenBox">
+                    <div class="boxList">
+                        <div class="boxCode c1"></div>
+                        <div class="boxTxt">
+                            <p>58APP</p>
+                            <p>扫描二维码</p>
+                            <p>安装58客户端</p>
+                        </div>
+                    </div>
+                    <div class="boxList">
+                        <div class="boxCode c2"></div>
+                        <div class="boxTxt">
+                            <p>手机浏览器</p>
+                            <p>用手机浏览器</p>
+                            <p>访问58同城</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav qrCode"><a href="javascript:void 0" class="navRed box">商家APP<span class="sanJiao"></span></a>
+                <div class="hiddenBox">
+                    <div class="boxList">
+                        <div class="boxCode c3"></div>
+                        <div class="boxTxt">
+                            <p>招才猫直聘</p>
+                            <p>帮老板快速招人</p>
+                            <p>8小时闪电入职</p>
+                        </div>
+                    </div>
+                    <div class="boxList">
+                        <div class="boxCode c4"></div>
+                        <div class="boxTxt">
+                            <p>58车商通</p>
+                            <p>收车卖车无忧</p>
+                            <p>车商必装APP</p>
+                        </div>
+                    </div>
+                </div></li>
+            <li class="nav qrCode"><span class="navRed box">58公众号<span class="sanJiao"></span></span>
+                <div class="hiddenBox">
+                    <div class="boxList">
+                        <div class="boxCode c5"></div>
+                        <div class="boxTxt">
+                            <p>58微信公众号</p>
+                            <p>重要提醒不错过</p>
+                            <p>核心操作更简单</p>
+                        </div>
+                    </div>
+                    <div class="boxList">
+                        <div class="boxCode c6"></div>
+                        <div class="boxTxt">
+                            <p>58QQ公众号</p>
+                            <p>1秒扫码</p>
+                            <p>用QQ轻松上58</p>
+                        </div>
+                    </div>
+                </div></li>
+            <li class="nav navHov"><a href="javascript:void 0" class="navRed navHov">微站</a></li>
+            <li class="nav navHov"><a href="javascript:void 0" class="navRed navHov">金融</a></li>
+            <li class="nav navHov"><a href="javascript:void 0" class="navGray navHov">安居客</a></li>
+            <li class="nav navHov"><a href="javascript:void 0" class="navGray navHov">中华英才网</a></li>
+            <li class="nav navHov"><a href="javascript:void 0" class="navGray navHov">58车</a></li>
+            <li class="nav right"><a href="javascript:void 0" class="right">我要推广</a></li>
+        </ul>
+    </div>
+</div>
+<!--middle start-->
+<div class="middle">
+    <div class="width_1190">
+        <!--左边内容 a-->
+        <div class="context_left">
+            <ul class="navIcon">
+                <li>
+                    <a href="javascript:void 0"><i></i>招聘</a>
+                    <em><a href="javascript:void 0">全职</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">兼职</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">简历</a></em>
+                </li>
+                <li>
+                    <a href="javascript:void 0"><i id="navIcon1"></i><span>房产</span></a>
+                    <em><a href="javascript:void 0">租房</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">二手房</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">公寓</a></em>
+                </li>
+                <li>
+                    <a href="javascript:void 0"><i id="navIcon2"></i><span>二手车</span></a>
+                    <em><a href="javascript:void 0">3万内</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">SUV</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">货车</a></em>
+                </li>
+                <li>
+                    <a href="javascript:void 0"><i id="navIcon3"></i><span>二手市场</span></a>
+                    <em><a href="javascript:void 0">手机</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">机械设备</a></em>
+                </li>
+                <li>
+                    <a href="javascript:void 0"><i id="navIcon4"></i><span>宠物</span></a>
+                    <em><a href="javascript:void 0">宠物狗</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">宠物猫</a></em>
+                </li>
+                <li>
+                    <a href="javascript:void 0"><i id="navIcon5"></i><span>本地商务</span></a>
+                    <em><a href="javascript:void 0">工商</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">租赁</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">创业</a></em>
+                </li>
+                <li class="noneBorder">
+                    <a href="javascript:void 0"><i id="navIcon6"></i><span>本地服务</span></a>
+                    <em><a href="javascript:void 0">家装</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">教育</a><span>&nbsp;/&nbsp;</span><a href="javascript:void 0">回收</a></em>
+                </li>
+            </ul>
+            <!--第一个块内容 北京房产-->
+            <div class="context_left_a">
+                <!--one 北京房产-->
+                <div class="contet_leone">
+                    <div class="Innerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">北京房产</a> </h2>
+                            <em><a href="#">热门地铁房</a> </em>
+                        </div>
+                        <!--内容-->
+                        <div class="right_context">
+                            <ul class="listzu">
+                                <li><a href="#">房屋出租</a></li>
+                                <li><a href="#" class="yellow">个人房源</a></li>
+                                <li><a href="#">品牌公寓整租</a></li>
+                                <li><a href="#">合租</a></li>
+                                <li><a href="#">二手房新房</a></li>
+                                <li><a href="#">商铺出租</a></li>
+                                <li><a href="#">商铺出售</a></li>
+                                <li><a href="#">生意转让</a></li>
+
+                                <li><a href="#" class="yellow">写字楼租售</a></li>
+                                <li><a href="#">短租</a><i>/</i><a href="#"> 日租公寓</a></li>
+                                <li><a href="#">厂房<i>/</i>仓库<i>/</i>土地<i>/</i>车位</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--two 二手车-->
+                <div class="contet_leone">
+                    <div class="Innerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">二手车</a> </h2>
+                            <em><a href="#">平行进口车</a> </em>
+                            <em><a href="#">车辆评估</a> </em>
+                        </div>
+                        <!--内容-->
+                        <div class="right_context3">
+                            <a href="#">0-3</a>
+                            <a href="#" class="yellow">3-5</a>
+                            <a href="#">5-10</a>
+                            <a href="#">10-20>20万</a>
+                            <a href="#">轿车</a>
+                            <span>/</span>
+                            <a href="#" class="first_margin yellow">跑车SUV</a>
+                            <span>/</span>
+                            <a href="#" class="first_margin">MPV面包车</a>
+                            <span>/</span>
+                            <a href="#" class="first_margin">58练手车准新车</a>
+                            <span>/</span>
+                            <a href="#" class="first_margin">新车汽车租赁</a>
+                            <span>/</span>
+                            <a href="#">车牌服务</a>
+                        </div>
+                        <!--全部品牌 闪电卖车-->
+                        <div class="title_brand">
+                            <a href="#">全部品牌</a>
+                            <a href="#">闪电卖车</a>
+                        </div>
+                        <!--内容-->
+                        <div class="right_context3">
+                            <a href="#" class="first_margin">大众</a>
+                            <a href="#" class="first_margin">别克</a>
+                            <a href="#" class="first_margin">福特</a>
+                            <a href="#" class="first_margin">标致</a>
+                            <a href="#" class="first_margin">雪佛兰</a>
+                            <a href="#" class="first_margin yellow">现代</a>
+
+                            <a href="#" class="first_margin">奇瑞长安</a>
+                            <a href="#" class="first_margin">比亚迪</a>
+                            <a href="#" class="first_margin">奥迪</a>
+                            <a href="#" class="first_margin">宝马</a>
+                            <a href="#" class="first_margin">奔驰</a>
+                            <a href="#" class="first_margin">雷克萨斯</a>
+                        </div>
+                        <!--阳光易手车 品质二手车-->
+                        <div class="title_brand">
+                            <a href="#">阳光易手车</a>
+                            <a href="#">品质二手车</a>
+                        </div>
+                        <div class="right_context3">
+                            <a href="#">货车</a>
+                            <span>/</span>
+                            <a href="#">客车福田</a>
+                            <span>/</span>
+                            <a href="#" class="yellow">东风</a>
+                            <span>/</span>
+                            <a href="#">江淮</a>
+                            <span>/</span>
+                            <a href="#">工程车</a>
+                            <span>/</span>
+                            <a href="#">叉车</a>
+                            <span>/</span>
+                            <a href="#">挖掘机</a>
+                            <span>/</span>
+                            <a href="#">装载机</a>
+                        </div>
+                        <!--新车 选车-->
+                        <div class="title_oner">
+                            <h2><a href="#">新车</a> </h2>
+                            <em><a href="#">选车</a> </em>
+                            <em><a href="#">降价</a> </em>
+                            <em><a href="#">低价新车</a> </em>
+                        </div>
+                        <div class="right_context3">
+                            <a href="#">CX-5</a>
+                            <span>/</span>
+                            <a href="#">大众</a>
+                            <span>/</span>
+                            <a href="#">阿特兹</a>
+                            <span>/</span>
+                            <a href="#">CR-V</a>
+                            <span>/</span>
+                            <a href="#">天籁</a>
+                            <span>/</span>
+                            <a href="#">TIIDA</a>
+                            <span>/</span>
+                            <a href="#">斯柯达</a>
+                            <span>/</span>
+                            <a href="#">Q5</a>
+                        </div>
+                        <!--汽车服务-->
+                        <div class="title_oner">
+                            <h2><a href="#">汽车服务</a> </h2>
+                            <em><a href="#">驾驶证</a> </em>
+                            <em><a href="#">空驾租车</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <div class="layer">
+                                <a href="#" class="first_margin">租车</a>
+                                <a href="#">货车</a>
+                                <i>/</i>
+                                <a href="#">大巴</a>
+                                <i>/</i>
+                                <a href="#">中巴</a>
+                                <i>/</i>
+                                <a href="#">面包</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">买车</a>
+                                <a href="#">4S店</a>
+                                <i>/</i>
+                                <a href="#">保险</a>
+                                <i>/</i>
+                                <a href="#">车牌</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                <a href="#">过户验车</a>
+                                <i>/</i>
+                                <a href="#">以租代购</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">用车</a>
+                                <a href="#">违章查询</a>
+                                <i>/</i>
+                                <a href="#">改装</a>
+                                <i>/</i>
+                                <a href="#">配件</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">养车</a>
+                                <a href="#">维修保养</a>
+                                <i>/</i>
+                                <a href="#">美容装饰</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">拼车</a>
+                                <a href="#">上下班车</a>
+                                <i>/</i>
+                                <a href="#">长途车</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">学车</a>
+                                <a href="#">驾校</a>
+                                <i>/</i>
+                                <a href="#">教练</a>
+                                <i>/</i>
+                                <a href="#">陪练</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--three 教育培训-->
+                <div class="contet_leone">
+                    <div class="Innerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">教育培训  </a> </h2>
+                            <em><a href="#">教师证</a> </em>
+                            <em><a href="#">留学大全</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <div class="layer">
+                                <a href="#" class="first_margin yellow">家教</a>
+                                <a href="#">机构</a>
+                                <i>/</i>
+                                <a href="#">个人</a>
+                                <i>/</i>
+                                <a href="#">课外辅导</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin yellow">培训</a>
+                                <a href="#">职业</a>
+                                <i>/</i>
+                                <a href="#">管理</a>
+                                <i>/</i>
+                                <a href="#">设计</a>
+                                <i>/</i>
+                                <a href="#">IT</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                <a href="#">艺术</a>
+                                <i>/</i>
+                                <a href="#">体育</a>
+                                <i>/</i>
+                                <a href="#">语言</a>
+                                <i>/</i>
+                                <a href="#">所有</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">育儿</a>
+                                <a href="#">胎教</a>
+                                <i>/</i>
+                                <a href="#">亲子</a>
+                                <i>/</i>
+                                <a href="#">婴幼</a>
+                                <i>/</i>
+                                <a href="#">学前</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">学历</a>
+                                <a href="#">成考</a>
+                                <i>/</i>
+                                <a href="#">自考</a>
+                                <i>/</i>
+                                <a href="#">考研</a>
+                                <i>/</i>
+                                <a href="#">考博</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">留学</a>
+                                <a href="#">美国</a>
+                                <i>/</i>
+                                <a href="#">加拿大</a>
+                                <i>/</i>
+                                <a href="#">英国</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">移民</a>
+                                <a href="#">美国</a>
+                                <i>/</i>
+                                <a href="#">加拿大</a>
+                                <i>/</i>
+                                <a href="#">澳洲</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <!--three 游戏中心-->
+                <div class="contet_leone">
+                    <div class="Innerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">游戏中心   </a> </h2>
+                            <em><a href="#">青云志</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu">
+                                <li><a href="#">决战武林</a> </li>
+                                <li><a href="#">魔晶幻想</a> </li>
+                                <li><a href="#">剑雨江湖</a> </li>
+                                <li><a href="#">仙侠道2</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+            </div>
+            <!--第二个块内容 二手市场-->
+            <div class="context_left_b">
+                <!--第一个 one-->
+                <div class="context_lbone">
+                    <div class="cInnerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">二手市场  </a> </h2>
+                            <em><a href="#">官方质检iPhone</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu">
+                                <li><a href="#">闲置换钱</a> </li>
+                                <li><a href="#">五折iPhone</a> </li>
+                            </ul>
+                        </div>
+                        <!--灰色标题-->
+                        <div class="title_brand">
+                            <a href="#">数码·通讯</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzunew">
+                                <li><a href="#" class="yellow">二手手机</a> </li>
+                                <li>
+                                    <a href="#">苹果</a>
+                                    <span>/</span>
+                                    <a href="#"> 三星</a>
+                                    <span>/</span>
+                                    <a href="#"> 小米</a>
+                                </li>
+                                <li><a href="#">台式电脑</a> </li>
+                                <li>
+                                    <a href="#">路由器</a>
+                                    <span>/</span>
+                                    <a href="#"> 硬件</a>
+                                </li>
+                                <li><a href="#" class="yellow">笔记本</a> </li>
+                                <li>
+                                    <a href="#">ThinkPad</a>
+                                    <span>/</span>
+                                    <a href="#"> 苹果</a>
+                                </li>
+                                <li><a href="#">平板电脑</a> </li>
+                                <li>
+                                    <a href="#">三星</a>
+                                    <span>/</span>
+                                    <a href="#"> Ipad</a>
+                                </li>
+                                <li><a href="#">数码产品</a> </li>
+                                <li>
+                                    <a href="#">单反</a>
+                                    <span>/</span>
+                                    <a href="#"> 相机</a>
+                                </li>
+                                <li><a href="#">手机号</a> </li>
+                                <li>
+                                    <a href="#">通讯业务</a>
+                                    <span>/</span>
+                                    <a href="#"> 电信</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--灰色标题-->
+                        <div class="title_brand">
+                            <a href="#">家具·家电·车辆</a>
+                            <a href="#"> 二手家具</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu">
+                                <li><a href="#">二手家电</a> </li>
+                                <li>
+                                    <a href="#">空调</a>
+                                    <span>/</span>
+                                    <a href="#"> 冰箱</a>
+                                    <span>/</span>
+                                    <a href="#"> 电视</a>
+                                </li>
+                                <li><a href="#">二手家具</a> </li>
+                                <li>
+                                    <a href="#">沙发</a>
+                                    <span>/</span>
+                                    <a href="#"> 床</a>
+                                    <span>/</span>
+                                    <a href="#"> 桌</a>
+                                </li>
+                                <li><a href="#">摩托车</a> </li>
+                                <li>
+                                    <a href="#">雅马哈</a>
+                                    <span>/</span>
+                                    <a href="#"> 大排量</a>
+                                </li>
+                                <li><a href="#">自行车</a> </li>
+                                <li>
+                                    <a href="#">电动车</a>
+                                    <span>/</span>
+                                    <a href="#"> 三轮车</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--灰色标题-->
+                        <div class="title_brand">
+                            <a href="#">百货·设备 </a>
+                            <a href="#"> 换季衣服便宜清</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzunew">
+                                <li><a href="#">家居日用</a> </li>
+                                <li>
+                                    <a href="#">厨具</a>
+                                    <span>/</span>
+                                    <a href="#"> 布艺</a>
+                                    <span>/</span>
+                                    <a href="#"> 床品</a>
+                                </li>
+                                <li><a href="#" class="yellow">母婴玩具</a> </li>
+                                <li>
+                                    <a href="#">婴儿床</a>
+                                    <span>/</span>
+                                    <a href="#"> 车</a>
+                                    <span>/</span>
+                                    <a href="#"> 玩具</a>
+                                </li>
+                                <li><a href="#">服装箱包</a> </li>
+                                <li>
+                                    <a href="#">手表</a>
+                                    <span>/</span>
+                                    <a href="#"> 箱包</a>
+                                    <span>/</span>
+                                    <a href="#"> 鞋</a>
+                                </li>
+                                <li><a href="#">二手设备</a> </li>
+                                <li>
+                                    <a href="#">机床</a>
+                                    <span>/</span>
+                                    <a href="#"> 挖机</a>
+                                    <span>/</span>
+                                    <a href="#"> 叉车</a>
+                                </li>
+                                <li><a href="#">文体户外</a> </li>
+                                <li>
+                                    <a href="#">健身</a>
+                                    <span>/</span>
+                                    <a href="#"> 乐器</a>
+                                    <span>/</span>
+                                    <a href="#"> 麻将</a>
+                                </li>
+                                <li><a href="#">艺术收藏</a> </li>
+                                <li>
+                                    <a href="#">古玩</a>
+                                    <span>/</span>
+                                    <a href="#"> 把件</a>
+                                    <span>/</span>
+                                    <a href="#"> 字画</a>
+                                </li>
+                                <li><a href="#">成人用品</a></li>
+                                <li><a href="#">美容保健</a></li>
+                                <li><a href="#">办公设备</a> </li>
+                                <li>
+                                    <a href="#">办公家具</a>
+                                    <span>/</span>
+                                    <a href="#"> 货柜</a>
+                                </li>
+                                <li><a href="#">图书音像</a> </li>
+                                <li><a href="#">校园二手</a></li>
+                                <li><a href="#">礼品转让</a> </li>
+                                <li><a href="#">游戏交易</a></li>
+                                <li><a href="#">二手求购</a> </li>
+                                <li>
+                                    <a href="#">交换</a>
+                                    <span>/</span>
+                                    <a href="#"> 其他二手</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--第一个 two-->
+                <div class="context_lbone">
+                    <div class="cInnerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">宠物/用品   </a> </h2>
+                            <em><a href="#">挑选健康幼犬</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <div class="layer">
+                                <a href="#" class="first_margin">狗狗</a>
+                                <a href="#">泰迪</a>
+                                <i>/</i>
+                                <a href="#" class="yellow">柯基</a>
+                                <i>/</i>
+                                <a href="#">拉布拉多</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                <a href="#">哈士奇</a>
+                                <i>/</i>
+                                <a href="#">金毛</a>
+                                <i>/</i>
+                                <a href="#">阿拉斯加</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                <a href="#">斗牛犬</a>
+                                <i>/</i>
+                                <a href="#">博美</a>
+                                <i>/</i>
+                                <a href="#">萨摩耶</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">猫猫</a>
+                                <a href="#">短毛猫</a>
+                                <i>/</i>
+                                <a href="#">加菲猫</a>
+                                <i>/</i>
+                                <a href="#">蓝猫</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">小宠</a>
+                                <a href="#">鱼</a>
+                                <i>/</i>
+                                <a href="#">鸟</a>
+                                <i>/</i>
+                                <a href="#">花</a>
+                                <i>/</i>
+                                <a href="#">其他</a>
+                                <i>/</i>
+                                <a href="#">龟</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">用品</a>
+                                <a href="#">服务</a>
+                                <i>/</i>
+                                <a href="#">鱼缸</a>
+                                <i>/</i>
+                                <a href="#">宠物寄养</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第一个 three-->
+                <div class="context_lbone">
+                    <div class="cInnerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">票务/卡卷   </a> </h2>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu">
+                                <li><a href="#">演出票</a> </li>
+                                <li><a href="#">电影票卡</a> </li>
+                                <li><a href="#" class="yellow">体育赛事</a> </li>
+                                <li><a href="#">游乐园景点</a> </li>
+                                <li><a href="#">购物卡</a> </li>
+                                <li><a href="#">健身卡</a> </li>
+                                <li><a href="#">特价机票</a> </li>
+                                <li><a href="#">火车票查询</a> </li>
+                                <li><a href="#">汽车票查询</a> </li>
+                                <li><a href="#">彩票</a><i>/</i><a href="#">双色球 </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--第一个 four-->
+                <div class="context_lbone">
+                    <div class="cInnerbox">
+                        <!--标题-->
+                        <div class="title_oner">
+                            <h2><a href="#">北京交友   </a> </h2>
+                        </div>
+                        <div class="right_context2" style="padding-bottom:9px;">
+                            <ul class="listzu">
+                                <li><a href="#">找美女</a><i class="iconv"></i> </li>
+                                <li><a href="#">同城征婚</a> </li>
+                                <li><a href="#">找帅哥</a> <i class="iconan"></i></li>
+                                <li><a href="#">在线约会</a> </li>
+                                <li><a href="#">技能交友</a> </li>
+                                <li><a href="#">视频交友</a> </li>
+                                <li><a href="#">真人照片</a> </li>
+                                <li><a href="#">美女表演</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第三个块内容 北京招聘-->
+            <div class="context_left_c">
+                <!--3-1box-->
+                <div class="contxtlcbox">
+                    <div class="csInnerbox">
+                        <!-- 标题 -->
+                        <div class="title_oner">
+                            <h2><a href="#">北京招聘 </a> </h2>
+                            <em><a href="#">北京求职简历</a> </em>
+                            <em><a href="#">普工速聘</a> </em>
+                            <em><a href="#">热门兼职</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzusan">
+                                <li><a href="#" class="yellow">同城速聘</a></li>
+                                <li><a href="#">包吃住专区</a> </li>
+                                <li><a href="#">五险一金专区</a></li>
+                                <li><a href="#">淘宝店招聘</a> </li>
+                                <li><a href="#">淘宝店招聘</a> </li>
+                                <li><a href="#">应届生专区</a> </li>
+                            </ul>
+                        </div>
+                        <!--end-->
+                        <!-- 灰色标题  精品推荐-->
+                        <div class="title_brand">
+                            <a href="#">精品推荐</a>
+                            <a href="#"> 写简历</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzusan">
+                                <li><a href="#">万元高薪</a></li>
+                                <li><a href="#">培训拿高薪</a> </li>
+                                <li><a href="#">名企招聘</a></li>
+                                <li><a href="#">酒店直招</a> </li>
+                                <li><a href="#">热门兼职</a> </li>
+                                <li><a href="#">毕业求职</a> </li>
+                            </ul>
+                        </div>
+                        <!--end-->
+                        <!-- 灰色标题  热招职位-->
+                        <div class="title_brand">
+                            <a href="#">热招职位</a>
+                            <a href="#"> 家政好工作,报名速上岗</a>
+                            <a href="#">非你莫属报名</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu_four">
+                                <li><a href="#">销售</a></li>
+                                <li><a href="#">客服</a> </li>
+                                <li><a href="#" class="yellow">司机</a></li>
+                                <li><a href="#">营业员</a> </li>
+                                <li><a href="#">文员</a> </li>
+                                <li><a href="#">助理</a> </li>
+                                <li><a href="#">普工</a> </li>
+                                <li><a href="#">导购员</a> </li>
+
+                                <li><a href="#">前台</a> </li>
+                                <li><a href="#" class="yellow">编辑</a> </li>
+                                <li><a href="#">电工</a> </li>
+                                <li><a href="#">收银员</a> </li>
+
+                                <li><a href="#">会计</a> </li>
+                                <li><a href="#">幼教</a> </li>
+                                <li><a href="#">技工</a> </li>
+                                <li><a href="#">理货员</a> </li>
+
+                                <li><a href="#">出纳</a> </li>
+                                <li><a href="#">保洁</a> </li>
+                                <li><a href="#">木工</a> </li>
+                                <li><a href="#">店长</a> </li>
+
+                                <li><a href="#">人事</a> </li>
+                                <li><a href="#">保姆</a> </li>
+                                <li><a href="#">操作工</a> </li>
+                                <li><a href="#">服务员</a> </li>
+
+                                <li><a href="#">行政</a> </li>
+                                <li><a href="#">月嫂</a> </li>
+                                <li><a href="#">保安</a> </li>
+                                <li><a href="#">厨师</a> </li>
+
+                                <li><a href="#">网管</a> </li>
+                                <li><a href="#">家政</a> </li>
+                                <li><a href="#">库管</a> </li>
+                                <li><a href="#">配菜</a> </li>
+
+                                <li><a href="#">足疗师</a> </li>
+                                <li><a href="#">房产</a> </li>
+                                <li><a href="#">快递员</a> </li>
+                                <li><a href="#">学徒</a> </li>
+
+                                <li><a href="#">发型师</a> </li>
+                                <li><a href="#">保险</a> </li>
+                                <li><a href="#">搬运工</a> </li>
+                                <li><a href="#">面点师</a> </li>
+
+                                <li><a href="#">美容师</a> </li>
+                                <li><a href="#">钟点工</a> </li>
+                                <li><a href="#">杂工</a> </li>
+                                <li><a href="#">洗碗工</a> </li>
+
+                                <li><a href="#">化妆师</a> </li>
+                                <li><a href="#">洗车工</a> </li>
+                                <li><a href="#">送餐员</a> </li>
+                                <li><a href="#">大堂经理</a> </li>
+
+                                <li><a href="#">摄影师</a> </li>
+                                <li><a href="#">汽车修理</a> </li>
+                                <li><a href="#">汽车美容</a> </li>
+                                <li><a href="#">更多职位 》</a> </li>
+                            </ul>
+                        </div>
+                        <!-- 标题 北京兼职-->
+                        <div class="title_oner">
+                            <h2><a href="#">北京兼职 </a> </h2>
+                            <em><a href="#">学生兼职</a> </em>
+                            <em><a href="#">放心兼职</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <div class="layer">
+                                <a href="#" class="first_margin">门槛低</a>
+                                <a href="#">配送</a>
+                                <i>/</i>
+                                <a href="#">传单派发</a>
+                                <i>/</i>
+                                <a href="#">钟点工</a>
+                                <i>/</i>
+                                <a href="#">促销导购</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">本领强</a>
+                                <a href="#">家教</a>
+                                <i>/</i>
+                                <a href="#" class="yellow">会计</a>
+                                <i>/</i>
+                                <a href="#">翻译</a>
+                                <i>/</i>
+                                <a href="#">美工</a>
+                                <i>/</i>
+                                <a href="#">法务</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">服务大人</a>
+                                <a href="#">化妆师</a>
+                                <i>/</i>
+                                <a href="#">健身教练</a>
+                                <i>/</i>
+                                <a href="#">护工</a>
+                                <i>/</i>
+                                <a href="#">汽车陪练</a>
+                            </div>
+                            <div class="layer">
+                                <a href="#" class="first_margin">热门搜</a>
+                                <a href="#">礼仪模特</a>
+                                <i>/</i>
+                                <a href="#">司仪驻唱</a>
+                                <i>/</i>
+                                <a href="#">更多》</a>
+                            </div>
+                        </div>
+                        <!--end-->
+                        <!-- 标题 热门行业-->
+                        <div class="title_oner">
+                            <h2><a href="#">热门行业 </a> </h2>
+                            <em><a href="#">北京招聘会</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu_four">
+                                <li><a href="#">酒店</a></li>
+                                <li><a href="#">仓储/物流</a> </li>
+                                <li><a href="#">教育/培训</a></li>
+                                <li><a href="#">餐饮</a> </li>
+                                <li><a href="#">建筑</a> </li>
+                                <li><a href="#">市场/媒介</a> </li>
+                                <li><a href="#">娱乐/休闲</a> </li>
+                                <li><a href="#">医疗/护理</a> </li>
+
+                                <li><a href="#">计算机/网络</a> </li>
+                                <li><a href="#">美容/美发</a> </li>
+                                <li><a href="#">制药/生物</a> </li>
+                                <li><a href="#">广告/会展</a> </li>
+
+                                <li><a href="#">保健按摩</a> </li>
+                                <li><a href="#">电子电气</a> </li>
+                                <li><a href="#">美术/设计</a> </li>
+                                <li><a href="#">运动健身</a> </li>
+
+                                <li><a href="#">机械仪器</a> </li>
+                                <li><a href="#">金融/银行</a> </li>
+                                <li><a href="#">超市/百货</a> </li>
+                                <li><a href="#">汽车服务</a> </li>
+
+                                <li><a href="#">纺织/食品</a> </li>
+                            </ul>
+                        </div>
+                        <!-- 灰色标题  中高级专业人才招聘-->
+                        <div class="title_brand">
+                            <a href="#">中高级专业人才招聘</a>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu_four">
+                                <li><a href="#">IT/网游</a></li>
+                                <li><a href="#">市场营销</a> </li>
+                                <li><a href="#">实习生</a></li>
+                                <li><a href="#" class="yellow">平面设计</a> </li>
+                                <li><a href="#">建筑设计师</a> </li>
+                                <li><a href="#">Java</a> </li>
+                                <li><a href="#">人力资源</a> </li>
+                                <li><a href="#">更多职位</a> </li>
+                            </ul>
+                        </div>
+                        <!--end-->
+                        <!-- 求职简历-->
+                        <div class="title_oner">
+                            <h2><a href="#">求职简历 </a> </h2>
+                            <em><a href="#">简历搜索</a> </em>
+                        </div>
+                        <div class="right_context2">
+                            <ul class="listzu_four">
+                                <li><a href="#">销售</a></li>
+                                <li><a href="#">导购</a> </li>
+                                <li><a href="#">厨师</a></li>
+                                <li><a href="#">房产经纪</a> </li>
+                                <li><a href="#">文员</a> </li>
+                                <li><a href="#">收银</a> </li>
+                                <li><a href="#">配菜</a> </li>
+                                <li><a href="#">保险经纪</a> </li>
+
+                                <li><a href="#">前台</a> </li>
+                                <li><a href="#">营业员</a> </li>
+                                <li><a href="#">服务员</a> </li>
+                                <li><a href="#">人事/行政</a> </li>
+
+                                <li><a href="#">客服</a> </li>
+                                <li><a href="#">保安</a> </li>
+                                <li><a href="#">洗碗工</a> </li>
+                                <li><a href="#">平面设计</a> </li>
+
+                                <li><a href="#">会计</a> </li>
+                                <li><a href="#">电工</a> </li>
+                                <li><a href="#">迎宾</a> </li>
+                                <li><a href="#">仓库管理</a> </li>
+                            </ul>
+                        </div>
+                        <!--end-->
+                    </div>
+                    <!--end-->
+                </div>
+                <!--3-2box-->
+                <div class="contxtlcbox">
+                    <div class="csInnerbox">
+                        <!-- 北京团购-->
+                        <div class="title_oner">
+                            <h2><a href="#">北京团购 </a> </h2>
+                        </div>
+                        <div class="right_context2" style="padding-bottom: 29px;">
+                            <ul class="listzu_four">
+                                <li><a href="#">餐饮美食</a></li>
+                                <li><a href="#">生活服务</a> </li>
+                                <li><a href="#">特价酒店</a></li>
+                                <li><a href="#">休闲娱乐</a> </li>
+                                <li><a href="#">蛋糕甜点</a> </li>
+                                <li><a href="#">电影票</a> </li>
+                                <li><a href="#">KTV</a> </li>
+                                <li><a href="#">景点门票</a> </li>
+
+                                <li><a href="#">办证大全</a> </li>
+                                <li><a href="#">进京证</a> </li>
+                                <li><a href="#">结婚证</a> </li>
+                                <li><a href="#">资格证</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边内容 b-->
+        <div class="context_right">
+            <div class="right_top" id="bigBanner">
+                <div id="lubotu">
+                    <h2>
+                        <a href="javascript:void 0">58到家自营服务<img src="images/DjTilCon.png" alt=""></a>
+                    </h2>
+                    <ul class="focus">
+                        <li class="curFocus"></li>
+                        <li></li>
+                    </ul>
+                    <div id="lunBo">
+                        <em>
+                            <a href="javascript:void 0" class="baojie">保洁</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="yuesao">月嫂</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="yuer">育儿嫂</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="baomu">保姆</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="meijia">美甲</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="banjia">搬家</a>
+                        </em>
+                        <em>
+                            <a href="javascript:void 0" class="houqin">企业后勤</a>
+                        </em>
+                    </div>
+                </div>
+                <div id="leftClick"></div>
+                <div id="rightClick"></div>
+            </div>
+            <div class="widthbox">
+
+                <!-- 右边标题标题 1-->
+                <div class="title_oner">
+                    <h2><a href="#">本地服务大全</a> </h2>
+                    <em><a href="#">快速办证，点这里</a> </em>
+                    <em><a href="#">留美榜单</a> </em>
+                </div>
+                <!--右边第一个内容-->
+                <div class="right_context">
+                    <a href="#">靠谱装修公司任您</a>
+                    <a href="#">挑掐指一算，命里缺钱</a>
+                </div>
+                <!-- 右边标题标题 2-->
+                <div class="title_oner">
+                    <h2><a href="#">家政服务</a> </h2>
+                    <em><a href="#">做饭阿姨</a> </em>
+                    <em><a href="#">家具安装</a> </em>
+                    <em><a href="#">公积金查询</a> </em>
+                </div>
+                <!--右边第2个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">搬家</a>
+                        <a href="#">居民</a>
+                        <i>/</i>
+                        <a href="#">公司</a>
+                        <i>/</i>
+                        <a href="#">小型</a>
+                        <i>/</i>
+                        <a href="#">长途</a>
+                        <i>/</i>
+                        <a href="#">空调移机</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">保姆</a>
+                        <a href="#">月嫂</a>
+                        <i>/</i>
+                        <a href="#">育儿嫂</a>
+                        <i>/</i>
+                        <a href="#">钟点工</a>
+                        <i>/</i>
+                        <a href="#">催乳师</a>
+                        <i>/</i>
+                        <a href="#">保姆</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin yellow">家务</a>
+                        <a href="#" class="yellow">回收</a>
+                        <i>/</i>
+                        <a href="#">开锁</a>
+                        <i>/</i>
+                        <a href="#">疏通</a>
+                        <i>/</i>
+                        <a href="#">鲜花</a>
+                        <i>/</i>
+                        <a href="#">干洗改衣</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">&nbsp</a>
+                        <a href="#">配送</a>
+                        <i>/</i>
+                        <a href="#">跑腿</a>
+                        <i>/</i>
+                        <a href="#">粮油副食</a>
+                        <i>/</i>
+                        <a href="#">煤气</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin yellow">维修</a>
+                        <a href="#">家电</a>
+                        <i>/</i>
+                        <a href="#">房屋</a>
+                        <i>/</i>
+                        <a href="#">家具</a>
+                        <i>/</i>
+                        <a href="#">电脑</a>
+                        <i>/</i>
+                        <a href="#">手机</a>
+                    </div>
+                </div>
+                <!-- 右边标题标题 3-->
+                <div class="title_oner">
+                    <h2><a href="#">婚庆摄影</a> </h2>
+                    <em><a href="#">结婚清单</a> </em>
+                    <em><a href="#">生育证件</a> </em>
+                    <em><a href="#">结婚证照片</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">结婚</a>
+                        <a href="#">婚庆</a>
+                        <i>/</i>
+                        <a href="#">婚车</a>
+                        <i>/</i>
+                        <a href="#">婚宴</a>
+                        <i>/</i>
+                        <a href="#">司仪</a>
+                        <i>/</i>
+                        <a href="#">彩妆</a>
+                        <i>/</i>
+                        <a href="#">用品</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin yellow">摄影</a>
+                        <a href="#">婚纱</a>
+                        <i>/</i>
+                        <a href="#">儿童</a>
+                        <i>/</i>
+                        <a href="#">写真</a>
+                        <i>/</i>
+                        <a href="#">轻点演出</a>
+                        <i>/</i>
+                        <a href="#">场地</a>
+                    </div>
+                </div>
+                <!-- 右边标题标题 装修-->
+                <div class="title_oner">
+                    <h2><a href="#">装修建材</a> </h2>
+                    <em><a href="#">靠谱装修公司</a> </em>
+                    <em><a href="#">除甲醛</a> </em>
+                    <em><a href="#">有房随便装</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">家装</a>
+                        <a href="#">装修</a>
+                        <i>/</i>
+                        <a href="#" class="yellow">设计</a>
+                        <i>/</i>
+                        <a href="#">效果图</a>
+                        <i>/</i>
+                        <a href="#">建材</a>
+                        <i>/</i>
+                        <a href="#">家具</a>
+                        <i>/</i>
+                        <a href="#">家纺</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">工装</a>
+                        <a href="#">办公室</a>
+                        <i>/</i>
+                        <a href="#" class="yellow">店铺</a>
+                        <i>/</i>
+                        <a href="#">厂房</a>
+                        <i>/</i>
+                        <a href="#">餐厅</a>
+                        <i>/</i>
+                        <a href="#">酒店</a>
+                    </div>
+                </div>
+                <!-- 右边标题标题 商务服务-->
+                <div class="title_oner">
+                    <h2><a href="#">商务服务</a> </h2>
+                    <em><a href="#">创业知识</a> </em>
+                    <em><a href="#">小本创业</a> </em>
+                    <em><a href="#">项目注册公司</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">开业</a>
+                        <a href="#">工商注册</a>
+                        <i>/</i>
+                        <a href="#">验资</a>
+                        <i>/</i>
+                        <a href="#">商标专利</a>
+                        <i>/</i>
+                        <a href="#">起名</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">财务</a>
+                        <a href="#">投资担保</a>
+                        <i>/</i>
+                        <a href="#">财务会计</a>
+                        <i>/</i>
+                        <a href="#">保险</a>
+                        <i>/</i>
+                        <a href="#" class="yellow">咨询</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">物流</a>
+                        <a href="#">货运物流</a>
+                        <i>/</i>
+                        <a href="#">快递</a>
+                        <i>/</i>
+                        <a href="#">货运专线</a>
+                        <i>/</i>
+                        <a href="#">货架</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">营销</a>
+                        <a href="#">广告</a>
+                        <i>/</i>
+                        <a href="#">设计策划</a>
+                        <i>/</i>
+                        <a href="#">应刷包装</a>
+                        <i>/</i>
+                        <a href="#">喷绘</a>
+                        <i>/</i>
+                        <a href="#">制卡</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">&nbsp; &nbsp; &nbsp; &nbsp;</a>
+                        <a href="#">礼品定制</a>
+                        <i>/</i>
+                        <a href="#">展会服务</a>
+                        <i>/</i>
+                        <a href="#">翻译速记</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">IT</a>
+                        <a href="#">建网站</a>
+                        <i>/</i>
+                        <a href="#">网络布线</a>
+                        <i>/</i>
+                        <a href="#">app开发</a>
+                        <i>/</i>
+                        <a href="#">网站推广</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">基建</a>
+                        <a href="#">机械维修</a>
+                        <i>/</i>
+                        <a href="#">办公维修</a>
+                        <i>/</i>
+                        <a href="#">建筑维修</a>
+                        <i>/</i>
+                        <a href="#">租赁</a>
+                    </div>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 旅游酒店-->
+                <div class="title_oner">
+                    <h2><a href="#">旅游酒店</a> </h2>
+                    <em><a href="#">护照办理</a> </em>
+                    <em><a href="#">签证办理</a> </em>
+                    <em><a href="#">证件尺寸</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">周边</a>
+                        <a href="#">农家乐</a>
+                        <i>/</i>
+                        <a href="#">烧烤</a>
+                        <i>/</i>
+                        <a href="#">度假村</a>
+                        <i>/</i>
+                        <a href="#">温泉</a>
+                        <i>/</i>
+                        <a href="#">采摘</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">国内</a>
+                        <a href="#">订房</a>
+                        <i>/</i>
+                        <a href="#">自驾游</a>
+                        <i>/</i>
+                        <a href="#">旅行社</a>
+                        <i>/</i>
+                        <a href="#">出境</a>
+                        <i>/</i>
+                        <a href="#">签证</a>
+                    </div>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 招商加盟-->
+                <div class="title_oner">
+                    <h2><a href="#">招商加盟</a> </h2>
+                    <em><a href="#">帮您找好项目</a> </em>
+                    <em><a href="#">赚钱捷径，加盟有【礼】</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2">
+                    <div class="layer">
+                        <a href="#" class="first_margin">餐饮加盟</a>
+                        <a href="#">农家乐</a>
+                        <i>/</i>
+                        <a href="#">服装鞋包</a>
+                        <i>/</i>
+                        <a href="#">特色加盟</a>
+                        <i>/</i>
+                        <a href="#">机械</a>
+                    </div>
+                    <div class="layer">
+                        <a href="#" class="first_margin">网店</a>
+                        <a href="#">礼品建材</a>
+                        <i>/</i>
+                        <a href="#">加盟美容</a>
+                        <i>/</i>
+                        <a href="#">保健环保</a>
+                        <i>/</i>
+                        <a href="#">母婴</a>
+                    </div>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 休闲娱乐-->
+                <div class="title_oner">
+                    <h2><a href="#">休闲娱乐</a> </h2>
+                    <em><a href="#">选好健身运动</a> </em>
+                    <em><a href="#">玩到让你尖叫</a> </em>
+                    <em><a href="#">驾驶技巧</a> </em>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2" style="white-space: inherit">
+                    <a href="#">足疗按摩</a>
+                    <i>/</i>
+                    <a href="#">洗浴温泉</a>
+                    <i>/</i>
+                    <a href="#">健身</a>
+                    <i>/</i>
+                    <a href="#">户外</a>
+                    <i>/</i>
+                    <a href="#">台球</a>
+                    <i>/</i>
+                    <a href="#">桌游</a>
+                    <i>/</i>
+                    <a href="#">茶馆</a>
+                    <i>/</i>
+                    <a href="#">咖啡厅</a>
+                    <i>/</i>
+                    <a href="#">手工坊</a>
+                    <i>/</i>
+                    <a href="#">KTV</a>
+                    <i>/</i>
+                    <a href="#">酒吧</a>
+                    <i>/</i>
+                    <a href="#">电玩</a>
+                    <i>/</i>
+                    <a href="#">网吧</a>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 农林牧副渔-->
+                <div class="title_twor">
+                    <!-- 左标题1-->
+                    <div class="title_twora">
+                        <div class="title_oner">
+                            <h2><a href="#">农林牧副渔</a> </h2>
+                        </div>
+                        <!--左边内容1-->
+                        <div class="twoconttext">
+                            <a href="#">农作物</a>
+                            <i>/</i>
+                            <a href="#">农用车</a>
+                            <i>/</i>
+                            <a href="#">种苗</a>
+                            <i>/</i>
+                            <a href="#">禽兽</a>
+                            <i>/</i>
+                            <a href="#">饲料</a>
+                            <i>/</i>
+                            <a href="#">园林花卉</a>
+                        </div>
+                    </div>
+                    <!-- 右标题1-->
+                    <div class="title_tworb">
+                        <div class="title_oner">
+                            <h2><a href="#">批发采购</a> </h2>
+                        </div>
+                        <!--右边内容1-->
+                        <div class="twoconttext">
+                            <a href="#">化妆品</a>
+                            <i>/</i>
+                            <a href="#">服装</a>
+                            <i>/</i>
+                            <a href="#">运动品</a>
+                            <i>/</i>
+                            <a href="#">食品</a>
+                            <i>/</i>
+                            <a href="#">商超</a>
+                            <i>/</i>
+                            <a href="#">安防</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 餐饮美食-->
+                <div class="title_twor">
+                    <!-- 左标题1-->
+                    <div class="title_twora">
+                        <div class="title_oner">
+                            <h2><a href="#">餐饮美食</a> </h2>
+                            <em><a href="#">外卖</a> </em>
+                        </div>
+                        <!--左边内容1-->
+                        <div class="twoconttext">
+                            <a href="#">外卖</a>
+                            <i>/</i>
+                            <a href="#">快餐</a>
+                            <i>/</i>
+                            <a href="#">宴会</a>
+                            <i>/</i>
+                            <a href="#">蛋糕</a>
+                            <i>/</i>
+                            <a href="#">美食</a>
+                            <i>/</i>
+                            <a href="#">西餐</a>
+                        </div>
+                    </div>
+                    <!-- 右标题1-->
+                    <div class="title_tworb">
+                        <div class="title_oner">
+                            <h2><a href="#">丽人</a> </h2>
+                            <em><a href="#">舞出好身材</a> </em>
+                        </div>
+                        <!--右边内容1-->
+                        <div class="twoconttext">
+                            <a href="#">美容</a>
+                            <i>/</i>
+                            <a href="#">祛斑</a>
+                            <i>/</i>
+                            <a href="#">美发</a>
+                            <i>/</i>
+                            <a href="#">美甲</a>
+                            <i>/</i>
+                            <a href="#">APA</a>
+                            <i>/</i>
+                            <a href="#">瘦身</a>
+                            <i>/</i>
+                            <a href="#">舞蹈</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <!-- 右边标题标题 医疗健康-->
+                <div class="title_oner">
+                    <h2><a href="#">医疗健康</a> </h2>
+                    <a href="#" class="ss"><i class="icoadd"></i>挂号</a>
+                </div>
+                <!--右边第3个内容-->
+                <div class="right_context2" style="white-space: inherit; padding-bottom: 25px;">
+                    <a href="#">男科</a>
+                    <i>/</i>
+                    <a href="#">早泄妇科</a>
+                    <i>/</i>
+                    <a href="#">人流颈椎</a>
+                    <i>/</i>
+                    <a href="#">腰椎入职体检</a>
+                    <i>/</i>
+                    <a href="#">母婴</a>
+                    <a href="#" class="first_margin">皮肤病</a>
+                    <a href="#" class="first_margin">白癜风</a>
+                    <a href="#" class="first_margin">阴茎延长</a>
+                    <a href="#" class="first_margin">不孕不育</a>
+                    <a href="#" class="first_margin">保健按摩</a>
+                    <a href="#" class="first_margin">整形美容</a>
+                    <a href="#" class="first_margin">尖锐湿疣</a>
+                    <a href="#" class="first_margin">健康问答</a>
+                </div>
+                <!--end-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer--->
+<div class="footer">
+    <div class="center">
+        <div class="remark clear">
+            <h2 id="logo"><a href="javascript:void 0"><img src="images/logo-o.png"  id="logo1"></a></h2>
+            <ul>
+                <li class="title">合作伙伴</li>
+                <li><a href="javascript:void 0">安居客</a></li>
+                <li><a href="javascript:void 0">驾校一点通</a></li>
+                <li><a href="javascript:void 0">中华英才网</a></li>
+            </ul>
+            <ul>
+                <li class="title">帮助中心</li>
+                <li><a href="javascript:void 0">常见问题</a></li>
+                <li><a href="javascript:void 0">更多帮助</a></li>
+                <li><a href="javascript:void 0">意见反馈</a></li>
+            </ul>
+            <ul>
+                <li class="title">关注我们</li>
+                <li><a href="javascript:void 0">新浪微博</a></li>
+                <li><a href="javascript:void 0">官网微信</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="title">关于58同城</li>
+                <li><a href="javascript:void 0">了解58同城</a></li>
+                <li><a href="javascript:void 0">加入58同城</a></li>
+            </ul>
+            <ul>
+            <li class="title">服务支持</li>
+            <li><a href="javascript:void 0">推广服务</a></li>
+            <li><a href="javascript:void 0">渠道招商</a></li>
+            <li><a href="javascript:void 0">先行赔付</a></li>
+            <li><a href="javascript:void 0">举报平台</a></li>
+        </ul>
+            <div></div>
+        </div>
+        <div class="record">
+            <em>京公网备案信息110105000809</em><span>|</span><a href="javascript:void 0">京ICP证060405</a><span>|</span><a href="javascript:void 0">京ICP备10012705号-2</a><span>|</span><em>乙测资字11018014</em><span>|</span><a href="javascript:void 0">Investor Relations</a><span>|</span><em>违法信息举报：4008135858&nbsp;&nbsp;jubao@58ganji.com</em><span>|</span><a href="javascript:void 0">反欺诈联盟</a><span>|</span><em>员工舞弊举报：wb@58.com</em>
+        </div>
+        <div class="police">
+            <a id="police1" href="javascript:void 0"></a><a id="police2" href="javascript:void 0"></a><a id="police3" href="javascript:void 0"></a><a id="police4" href="javascript:void 0"></a><a id="police5" href="javascript:void 0"></a><a id="police6" href="javascript:void 0"></a>
+        </div>
+    </div>
+</div>
+<!--下标-->
+<div id="rightSup">
+    <div class="newVer">
+        <p>新版</p>
+        <p></p>
+        <div class="hiddenCode">
+            <span class="rSanJiao"></span>
+            <p>扫描下载58同城</p>
+            <div class="boxCode c1"></div>
+            <p>轻松找房 找工作 换二手</p>
+        </div>
+    </div>
+    <div>
+        <div>我要<br>反馈</div>
+    </div>
+    <div>
+        <div>返回<br>顶部</div>
+    </div>
+</div>
+</body>
+<script src="js/utils2.0.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/event-4.0.js"></script>
+<script src="js/js1.js"></script>
+<script src="js/jsBanner.js"></script>
+<script src="js/jsWeather.js"></script>
+</html>
+
